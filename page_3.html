@@ -6,38 +6,109 @@
 
     <!-- Page title - shows in the browser tab -->
     <title>FallArtz</title>
-
+    <link rel="icon" href="images/Fall_Favicon.png">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <header>
-        <!-- Site name or logo goes here (use <h1>) -->
-        <h1 class="page-title"><a href="page_3.html">Gallery</a></h1>
+        <!-- Site name or logo goes here (use <h2>) -->
+        <img src="images/Fall_Logo.png" class="logo-img" alt="Site Logo">
+        <h1 class="page-title">Gallery</h1>
     </header>
     <nav>
         <!-- Navigation links to your other pages -->
         <p><a href = "./index.html">Home</a></p>
-        <p><a href = "./page_1.html">Characters</a></p>
-        <p><a href = "./page_2.html">Lore</a></p>
+        <div class="dropdown">
+            <div class="dropdown-label">
+                <p><a href= "./page_1.html">Characters</a></p>
+                <button onclick="dropdownFunction()" class="drop-btn">▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="./sarky.html">Sarky</a>
+                        <a href="./fall.html">Fall</a>
+                        <a href="./mistfeather.html">Mistfeather</a>
+                        <a href="./kiri.html">Kiri</a>
+                        <a href="./twilight.html">Twilight</a>
+                        <a href="./kiro.html">Kiro</a>
+                    </div>
+            </div>
+        </div>
         <p><a href = "./page_3.html">Gallery</a></p>
     </nav>
     <main>
         <!-- The unique content for THIS page only -->
+        <div class="gallery">
 
-        <section>
-            <!-- A section groups related content under a heading (use <h2>) -->
-        </section>
+            <div class="gallery-item">
+                <img src="images/Mystery_Artwork.jpeg" alt="Digital artwork of Mystery">
+                <h2>Mystery</h2>
+                <p>This artwork was drawn as an <a href="https://artfight.net/attack/17652620.memory">Artfight attack!</a>
+                The character does not belong to me but the design is awesome.</p>
+            </div>
 
-        <section>
-            <!-- Add more sections as you need them -->
-        </section>
+            <div class="gallery-item">
+                <img src="images/Owltuft_Artwork.jpeg" alt="Digital artwork of Owltuft">
+                <h2>Owltuft</h2>
+                <p>Owltuft was born of one of my first art trades, and has been the last ever since.
+                I'm not very good with art trades, commitment, and procrastination.</p>
+            </div>
 
+            <div class="gallery-item">
+                <img src="images/Koi_Artwork.jpeg" alt="Digital artwork of Koi cleaning a table with a white cloth">
+                <h2>Koi Kalatzler</h2>
+                <p>I drew this as another <a href="https://artfight.net/attack/13981070.table">Artfight attack</a> :)
+                Essentially a gift for a really awesome person. At the time of creation I was very proud of this artwork, 
+                I had put extra effort into it! Now I have since improved and can see the flaws. Not so proud anymore.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/Firecracker_Artwork.jpeg" alt="Digital artwork of Firecracker with the sunset beach in the background">
+                <h2>Firecracker</h2>
+                <p>Another <a href="https://artfight.net/attack/14693327.firecracker">Artfight attack!</a> I am
+                still proud of this artwork because the style in which I did it looks wonderful. Even I don't
+                believe I could possibly recreate this. All in all Firecracker was an experiment gone well.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/Hollowknight_Artwork.jpeg" alt="Digital artwork of Hornet and The Knight fighting, set in Greenpath">
+                <h2>Hornet and The Knight</h2>
+                <p>I drew this a long while back, especially in my Hollow Knight era. I still love Hollow Knight,
+                but am currently obsessed with other things. This is one of my proud works as it may be the artwork 
+                I've spent the most time on in all my art years.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/BookOfJohn_Artwork.jpeg" alt="Digital artwork of a blue book">
+                <h2>The Book of John</h2>
+                <p>I drew this as a gift for my friend, John, for their birthday. It's amazing. John's amazing.
+                Find their Artfight <a href="https://artfight.net/~RijuNightshade">here.</a>
+                </p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/Cliff_Background.jpeg" alt="Digital artwork of a cliff scene">
+                <h2>Cliff</h2>
+                <p>At the start of 2026, this was designed for my animation assignment. The animation itself was
+                not exactly amazing, but I like the background. Probably one of the only backgrounds I have ever drawn.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/Flecks_Artwork.jpeg" alt="Digital artwork of a red fox with a lantern hanging around its neck">
+                <h2>Flecks</h2>
+                <p>One of my early <a href="https://artfight.net/attack/7163596.flecks-fox-form">Artfight attack</a>s and it
+                still looks good, even now. It was drawn in 2024. I am proud of it. Not much else to say.</p>
+            </div>
+
+        </div>
+        <div>
+                <p><strong>You've reached the end of the gallery and likely the website too :) Thanks for taking the time
+            to check everything out!!! Have a good day / afternoon / evening / night. - Kiri</strong></p>
+        </div>
     </main>
 
     <footer>
         <p class = "center">&copy; Kiri 2026.</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

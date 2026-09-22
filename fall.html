@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title - shows in the browser tab -->
+    <title>FallArtz</title>
+    <link rel="icon" href="images/Fall_Favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header>
+        <!-- Site name or logo goes here (use <h2>) -->
+            <img src="images/Fall_Logo.png" class="logo-img" alt="Site Logo">
+            <h1 class="page-title">Fall</h1>
+    </header>
+    <nav>
+        <!-- Navigation links to your other pages -->
+        <p><a href = "./index.html">Home</a></p>
+        <div class="dropdown">
+            <div class="dropdown-label">
+                <p><a href= "./page_1.html">Characters</a></p>
+                <button onclick="dropdownFunction()" class="drop-btn">▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="./sarky.html">Sarky</a>
+                        <a href="./fall.html">Fall</a>
+                        <a href="./mistfeather.html">Mistfeather</a>
+                        <a href="./kiri.html">Kiri</a>
+                        <a href="./twilight.html">Twilight</a>
+                        <a href="./kiro.html">Kiro</a>
+                    </div>
+            </div>
+        </div>
+        <p><a href = "./page_3.html">Gallery</a></p>
+    </nav>
+
+    <main>
+        <!-- The unique content for THIS page only -->
+        <a href ="./page_1.html" class="characters-btn">◀ Back</a> <!-- Button that returns to the characters page -->
+        <div>
+            <img src="images/Fall_2026Reference.PNG" alt="Digital art reference of the fox known as Fall" class="reference-img">
+        </div>
+        <section>
+            <h2>Fall</h2>
+                <p>A young foxling with a shared heritage from both the Foxtail and the Foxheart. As mainly an arctic fox, 
+                she's naturally attuned to colder climates, but her red fox heritage allows her to survive and adapt to any habitat.</p>
+                <p>She grew up in the forest with her mother, Frost (the arctic fox from the Foxtail) and her father, 
+                Tree (the red fox from the Foxheart) and her little sibling, Snowpaw.</p>
+                <p>Fall has a  good heart and likes to believe that she is very kind. She strives to be a good fox through her actions, 
+                always willing to help. However, she is easily influenced, especially in a bad way. If she's not careful, she can lose the progress she's made.</p>
+                <p>
+                After her hunt for the Lost Pieces, she lived a quiet life in the forest. But one fateful morning, a white 
+                goose was swept downstream by a fierce current. This was her first meeting with Sarky.</p>
+                <p>Their relationship is chaotic, to say the least. Fall's gentle nature encourages her to look after Sarky. 
+                The silly goose is adamant in his chaotic ways. With Sarky, she feels understood.</p>
+                <p>The pair can often be seen relaxing by the same river that delivered Sarky unto her paws.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class = "center">&copy; Kiri 2026.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

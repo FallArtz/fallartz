@@ -6,20 +6,33 @@
 
     <!-- Page title - shows in the browser tab -->
     <title>FallArtz</title>
-
+    <link rel="icon" href="images/Fall_Favicon.png">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <header>
-        <!-- Site name or logo goes here (use <h1>) -->
-        <h1 class="page-title"><a href="page_1.html">Characters</a></h1>
+        <!-- Site name or logo goes here (use <h2>) -->
+        <img src="images/Fall_Logo.png" class="logo-img" alt="Site Logo">
+        <h1 class="page-title">Characters</h1>
     </header>
     <nav>
         <!-- Navigation links to your other pages -->
         <p><a href = "./index.html">Home</a></p>
-        <p><a href = "./page_1.html">Characters</a></p>
-        <p><a href = "./page_2.html">Lore</a></p>
+        <div class="dropdown">
+            <div class="dropdown-label">
+                <p><a href= "./page_1.html">Characters</a></p>
+                <button onclick="dropdownFunction()" class="drop-btn">▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="./sarky.html">Sarky</a>
+                        <a href="./fall.html">Fall</a>
+                        <a href="./mistfeather.html">Mistfeather</a>
+                        <a href="./kiri.html">Kiri</a>
+                        <a href="./twilight.html">Twilight</a>
+                        <a href="./kiro.html">Kiro</a>
+                    </div>
+            </div>
+        </div>
         <p><a href = "./page_3.html">Gallery</a></p>
     </nav>
 
@@ -27,25 +40,50 @@
         <!-- The unique content for THIS page only -->
         <section>
             <!-- A section groups related content under a heading (use <h2>) -->
-                <div class="img-row">
-                    <img src="images/Sarky_Portrait.PNG" width="200">
-                    <img src="images/Fall_Portrait.PNG" width="200">
-                    <img src="images/Mistfeather_Portrait.PNG" width="200">
-                    <img src="images/Kiri_Portrait.PNG"> <!-- Placeholder, must draw a new image for -->
-                    <img src="images/Twilight_2025Reference.PNG" width="200">
-                    <img src="images/Kiro_2025Reference.PNG" width="200">
+            <div class="img-row">
+                <div class="img-item">
+                    <a href="./sarky.html">
+                        <img src="images/Sarky_Avatar.jpeg" alt="Portrait image of a white goose wearing a top hat, holding a dagger in its mouth" class="img-row-img">
+                        <h2>Sarky</h2>
+                    </a>
                 </div>
+                <div class="img-item">
+                    <a href="./fall.html">
+                        <img src="images/Fall_Avatar.jpeg" alt="Orange fox drawing" class="img-row-img">
+                        <h2>Fall</h2>
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="./mistfeather.html">
+                        <img src="images/Mistfeather_Avatar.jpeg" alt="A blue warrior cat" class="img-row-img">
+                        <h2>Mistfeather</h2>
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="./kiri.html">
+                        <img src="images/Kiri_Avatar.jpeg" alt="Colourful human's face" class="img-row-img"> <!-- Placeholder, must draw a new image for -->
+                        <h2>Kiri</h2>
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="./twilight.html">
+                        <img src="images/Twilight_Avatar.jpeg" alt="A blue Wings of Fire Rainwing's face" class="img-row-img">
+                        <h2>Twilight</h2>
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="./kiro.html">
+                        <img src="images/Kiro_Avatar.jpeg" alt="Portrait of a black and white emo wolf" class="img-row-img">
+                        <h2>Kiro</h2>
+                    </a>
+                </div>
+            </div>
         </section>
-
-        <section>
-            <!-- Add more sections as you need them -->
-        </section>
-
     </main>
 
     <footer>
         <p class = "center">&copy; Kiri 2026.</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

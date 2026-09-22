@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Page title - shows in the browser tab -->
     <title>FallArtz</title>
-
+    <link rel="icon" href="images/Fall_Favicon.png">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <header>
-        <!-- Site name or logo goes here (use <h1>) -->
-        <h1 class="page-title"><a href="index.html">FallArtz</a></h1>
+        <!-- Site name or logo goes here (use <h2>) -->
+        <img src="images/Fall_Logo.png" class="logo-img" alt="Site Logo">
+        <h1 class="page-title">FallArtz</h1>
     </header>
     <nav>
         <!-- Navigation links to your other pages -->
         <p><a href = "./index.html">Home</a></p>
-        <p><a href = "./page_1.html">Characters</a></p>
-        <p><a href = "./page_2.html">Lore</a></p>
+        <div class="dropdown">
+            <div class="dropdown-label">
+                <p><a href= "./page_1.html">Characters</a></p>
+                <button onclick="dropdownFunction()" class="drop-btn">▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="./sarky.html">Sarky</a>
+                        <a href="./fall.html">Fall</a>
+                        <a href="./mistfeather.html">Mistfeather</a>
+                        <a href="./kiri.html">Kiri</a>
+                        <a href="./twilight.html">Twilight</a>
+                        <a href="./kiro.html">Kiro</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu"></div>
         <p><a href = "./page_3.html">Gallery</a></p>
     </nav>
     <main>
         <!-- The unique content for THIS page only -->
         <figure class="wrap">
-            <img src="images/Fall_Portrait.PNG" width="300" alt="Artist's Profile Picture">
+            <img src="images/Fall_Avatar.jpeg" width="300" alt="Artist's Profile Picture">
         </figure>
         <section>
-            <h1>Who am I?</h1>
+            <h2>Who am I?</h2>
             <p>Hi there! My name is Kiri, and I'm from New Zealand. Online, I go by the artist name of FallArtz.</p>
 
             <p>I'm a Digital Artist, so my specialty is Procreate. I draw using an iPad and apple pencil.
@@ -43,8 +57,8 @@
         </section>
 
         <section>
-            <!-- A section groups related content under a heading (use <h2>) -->
-            <h2>Things I like!</h2>
+            <!-- A section groups related content under a heading (use <h3>) -->
+            <h3>Things I like!</h3>
             <p>I like cats, geese, foxes, the colour yellow, drawing, playing games, reading, playing music, 
             listening to music, and writing. I'm knowledgeable about and in many, many fandoms, but I hate listing things I know; 
             feel free to ask me what I like if you're curious :].</p>
@@ -52,18 +66,12 @@
             <p>I have a black cat! Her name is Luna. She's such a silly gremlin, all of my clothes are coated in her fur. 
             I'm a musician that plays two instruments! The first instrument I learnt was the Piano, 
             which I started in the middle of 2021. On December 2, 2025, I started learning the Viola too. I've been enjoying it so far!</p>
-
         </section>
-
-        <section>
-            <!-- Add more sections as you need them -->
-        </section>
-
     </main>
 
     <footer>
         <p class = "center">&copy; Kiri 2026.</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
